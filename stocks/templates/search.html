@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesquisar Ações</title>
+</head>
+<body>
+    <h1>Pesquisar Ações</h1>
+    <form action="{% url 'results' %}" method="get">
+        <label for="ticker">Digite o ticker:</label>
+        <input type="text" id="ticker" name="ticker" placeholder="AAPL, MSFT, etc." required>
+        
+        <label for="years">Período (anos):</label>
+        <input type="number" id="years" name="years" min="1" max="24" value="1" required>
+        
+        <button type="submit">Pesquisar</button>
+    </form>
+</body>
+</html>

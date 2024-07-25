@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado da Pesquisa</title>
+</head>
+<body>
+    <h1>Resultado da Pesquisa para {{ ticker }}</h1>
+    <p>Período: {{ years }} anos</p>
+    {% if graphic %}
+    <img src="data:image/png;base64,{{ graphic }}" alt="Gráfico de Preço de Fechamento">
+    {% else %}
+    <p>Nenhum dado encontrado.</p>
+    {% endif %}
+    <a href="{% url 'search' %}">Voltar</a>
+</body>
+</html>
