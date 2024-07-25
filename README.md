@@ -1,0 +1,1 @@
+# paulosergioveras-Automated-Trading-System
